@@ -33,12 +33,9 @@
         }
         public function editForm($id, $incm, $tgl, $provider, $cluster, $site){
             try{ 
-                $sql = "UPDATE form SET incm=:incm, tgl=:tgl, provider=:provider, cluster=:cluster, site=:site WHERE id_form = :id"; 
+                $sql = "UPDATE form SET incm=:incm, date=:tgl, provider=:provider, cluster=:cluster, site=:site WHERE id_form = :id"; 
                 $stmt = $this->db->prepare($sql);
                 $stmt->bindparam(':id', $id);
-                $stmt->bindparam(':nama', $name);
-                $stmt->bindparam(':email', $email);
-                $stmt->bindparam(':nohp', $telp);
                 $stmt->bindparam(':incm', $incm);
                 $stmt->bindparam(':tgl', $tgl);
                 $stmt->bindparam(':provider', $provider);

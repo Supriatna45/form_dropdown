@@ -63,8 +63,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-        <li><a class="nav-link scrollto" href="#about">Form</a></li>
+        <li><a class="nav-link scrollto" href="index.php">Form</a></li>
           <li><a class="getstarted scrollto" href="datamasuk.php">Tabel</a></li>
+        <li><a class="nav-link scrollto" href="logform.php">Log</a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -78,7 +80,7 @@
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div style="text-align:center;" class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Sukses mendaftar!</h1>
+          <h1>Sukses mengubah data</h1>
           <h2>Selalu cek kembali data yang sudah dimasukkan</h2>
         </div>
       </div>
@@ -136,29 +138,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Daftar</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="formcourse.html">Course</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tukar Pelajar</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Seminar</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Kunjungi media sosial Polinema :</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
           </div>
 
         </div>
@@ -167,14 +148,13 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>2021</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->

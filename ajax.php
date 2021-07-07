@@ -11,8 +11,7 @@ if(isset($_POST['division'])){
                         <option selected disabled value="">Open this select menu</option>';
     foreach($result as $res){
         $district = $res['district'];
-        $idd = $res['id'];
-        $html .= '<option value="'.$idd.'">'.$district.'</option>';
+        $html .= '<option value="'.$district.'">'.$district.'</option>';
     }
     $html .= '</select>';
     echo $html;
@@ -27,8 +26,7 @@ if(isset($_POST['district'])){
                         <option selected disabled value="">Open this select menu</option>';
     foreach($result as $res){
         $upazila = $res['upazila'];
-        $idu = $res['id'];
-        $html .= '<option value="'.$idu.'">'.$upazila.'</option>';
+        $html .= '<option value="'.$upazila.'">'.$upazila.'</option>';
     }
     $html .= '</select>';
     echo $html;

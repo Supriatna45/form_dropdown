@@ -3,6 +3,7 @@
     require_once 'conn2.php';    
     $id = $_GET['id'];
     $form = $crud->getFormDetails($id);
+    $connection = new Connection;
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +46,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  
 </head>
 
 <body>
@@ -84,8 +86,8 @@
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -140,7 +142,7 @@
             <br>
             <div class="container">
                 <label for="tgl">Tanggal</label>
-                <input required type="text" class="form-control" value="<?php echo $form['tgl']?>" id="tgl" name="tgl">
+                <input required type="text" class="form-control" value="<?php echo $form['date']?>" id="tgl" name="tgl">
             </div>
             <br>
             <br>
@@ -151,7 +153,7 @@
         <br>
         <br>
       </div>
-    </section><!-- End About Us Section -->
+  </section><!-- End About Us Section -->
 
   </main><!-- End #main -->
 
