@@ -1,8 +1,8 @@
 <?php
-    $host = 'localhost';
-    $db = 'sitebts';
-    $user = 'root';
-    $pass = '';
+    $host = 'sql6.freemysqlhosting.net';
+    $db = 'sql6423673';
+    $user = 'sql6423673';
+    $pass = 'Uv1IXYHttl';
     $charset = 'utf8mb4';
 
     // $host = 'remotemysql.com';

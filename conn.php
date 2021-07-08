@@ -3,7 +3,7 @@ class Connection{
     public $conn;
     public function __construct()
     {
-        $this->conn = new PDO('mysql:host=localhost;dbname=sitebts','root','');
+        $this->conn = new PDO('mysql:host=sql6.freemysqlhosting.net;dbname=sql6423673','sql6423673','Uv1IXYHttl');
         if($this->conn){
         }
     }
