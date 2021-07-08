@@ -55,7 +55,7 @@
         <ul>
         <li><a class="nav-link scrollto" href="index.php">Form</a></li>
         <li><a class="getstarted scrollto" href="datamasuk.php">Data</a></li>
-        <li><a class="nav-link scrollto" href="datalog.php">Log</a></li>
+        <!-- <li><a class="nav-link scrollto" href="datalog.php">Log</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -142,7 +142,7 @@
             <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="index.php">Form</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>              
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>               -->
             </ul>
           </div>
         </div>

@@ -60,7 +60,7 @@ $connection = new Connection;
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="#about">Form</a></li>
-          <li><a class="getstarted scrollto" href="datamasuk.php">Tabel</a></li>
+          <li><a class="getstarted scrollto" href="datamasuk.php">Data</a></li>
           <!-- <li><a class="nav-link scrollto" href="datalog.php">Log</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -185,7 +185,7 @@ $connection = new Connection;
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">Form</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li> -->
             </ul>
           </div>
 

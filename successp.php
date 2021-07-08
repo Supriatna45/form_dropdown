@@ -140,7 +140,7 @@
             <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="index.php">Form</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li> -->
             </ul>
           </div>
 
