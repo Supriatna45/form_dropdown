@@ -82,7 +82,7 @@ $connection = new Connection;
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/index.png" class="img-fluid animated" alt="" style="width:505px;height:470px;">
+          <img src="assets/img/index.png" class="img-fluid animated" alt="" >
         </div>
       </div>
     </div>
