@@ -64,8 +64,8 @@
       <nav id="navbar" class="navbar">
         <ul>
         <li><a class="nav-link scrollto" href="index.php">Form</a></li>
-          <li><a class="getstarted scrollto" href="datamasuk.php">Tabel</a></li>
-        <li><a class="nav-link scrollto" href="logform.php">Log</a></li>
+          <li><a class="getstarted scrollto" href="datamasuk.php">Data</a></li>
+        <!-- <li><a class="nav-link scrollto" href="logform.php">Log</a></li> -->
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -138,7 +138,9 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.php">Form</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>
             </ul>
           </div>
 

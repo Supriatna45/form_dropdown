@@ -1,16 +1,17 @@
 <?php 
     require_once 'conn.php';
     require_once 'conn2.php';
-    $results = $crud->getForm();
+        $id = $_GET['id'];
+        $result = $crud->getLogDetails($id);
+    
 ?> 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Data Form</title>
+  <title>View Pendaftar</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -31,7 +32,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/stylef.css" rel="stylesheet">
+  <link href="assets/css/stylefs.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.1.0
@@ -42,20 +43,19 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.php">DROPDOWN</a></h1>
+      <h1 class="logo me-auto"><a href="index.php">POLINEMA</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-        <li><a class="nav-link scrollto" href="index.php">Form</a></li>
-        <li><a class="getstarted scrollto" href="datamasuk.php">Data</a></li>
-        <!-- <li><a class="nav-link scrollto" href="datalog.php">Log</a></li> -->
+          <li><a class="nav-link scrollto" href="index.php">Form</a></li>
+          <li><a class="getstarted scrollto" href="datamasuk.php">Data</a></li>
+          <!-- <li><a class="nav-link scrollto" href="datalog.php">Log</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -65,66 +65,48 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-  
+
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div style="text-align:center;" class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Data Masuk Form</h1>
-          <h2>Data tersebut dapat diubah dan dihapus sesuai tombol.</h2>
+          <h1>View perubahan data</h1>
+          <h2>Melihat salah perubahan data secara keseluruhan.</h2>
         </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
-
   <main id="main">
+      
+    <!-- ========== Hasil======= -->
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Tabel Data Form</h2>
+    <section id="team" class="team section-bg">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Data Perubahan</h2>
+            <p>Tabel tersebut berisi data sebelum dan sesudah diubah.</p>
+          </div>
+  
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                    <div class="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="member-info">
+                            <h4>ID Form = <?php echo $result['id_form']?></h4>
+                            <span>Provider = <?php echo $result['old_provider']?> --> <?php echo $result['new_provider']?></span>
+                            <span>Cluster = <?php echo $result['old_cluster']?> --> <?php echo $result['new_provider']?></span>
+                            <span>Site = <?php echo $result['old_site']?> --> <?php echo $result['new_site']?></span>
+                            <p>INCM = <?php echo $result['old_incm']?> --> <?php echo $result['new_incm']?></p>
+                            <p>Tanggal = <?php echo $result['old_tgl']?> --> <?php echo $result['new_tgl']?></p>
+                            <p>Waktu perubahan = <?php echo $result['time']?></p>
+                            <br>           
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="row content d-flex justify-content-center">
-          <div class="col-lg-6">
-            <p style="text-align: center;">
-              Berikut adalah data form :
-            </p>
-            <br>
-        </div>
-        <br>
-        <table class="table table-bordered">
-        <tr>
-            <th>No</th>
-            <th>Provider</th>
-            <th>Cluster</th>
-            <th>Site</th>
-            <th>INCM</th>
-            <th>Tanggal</th>
-            <th>Action</th>
-        </tr>
-        <?php while($r = $results->fetch(PDO::FETCH_ASSOC)){ ?>
-              <tr>
-                  <td><?php echo $r['id_form'] ?></td>
-                  <td><?php echo $r['provider'] ?></td>
-                  <td><?php echo $r['cluster'] ?></td>
-                  <td><?php echo $r['site'] ?></td>
-                  <td><?php echo $r['incm'] ?></td>
-                  <td><?php echo $r['date'] ?></td>
-                  <td>
-                      <a href="editdatamasuk.php?id=<?php echo $r['id_form'] ?>" class="btn btn-warning" style="background-color:#37517e; border-color: #37517e; color:white;">Edit</a> &nbsp;
-                      <a onclick="return confirm('Are you sure?');" href="deldatamasuk.php?id=<?php echo $r['id_form'] ?>" class="btn btn-danger">Delete</a>
-                  </td>
-              </tr>
-        <?php }?>
-    </table>
-        <br>
-        <br>
-      </div>
-    </section><!-- End About Us Section -->
-
+      </section>
+    <!-- ======= end Hasil =========-->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -150,7 +132,7 @@
             <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="index.php">Form</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>            
+              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>
             </ul>
           </div>
         </div>
@@ -186,5 +168,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 <?php 
     require_once 'conn.php';
     require_once 'conn2.php';
-    $results = $crud->getForm();
+    $results = $crud->getLog();
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +55,7 @@
         <ul>
         <li><a class="nav-link scrollto" href="index.php">Form</a></li>
         <li><a class="getstarted scrollto" href="datamasuk.php">Data</a></li>
-        <!-- <li><a class="nav-link scrollto" href="datalog.php">Log</a></li> -->
+        <li><a class="nav-link scrollto" href="datalog.php">Log</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -94,29 +94,21 @@
             </p>
             <br>
         </div>
-        <br>
         <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>Provider</th>
-            <th>Cluster</th>
-            <th>Site</th>
-            <th>INCM</th>
-            <th>Tanggal</th>
+            <th>ID Form</th>
+            <th>Waktu diubah</th>
             <th>Action</th>
         </tr>
         <?php while($r = $results->fetch(PDO::FETCH_ASSOC)){ ?>
               <tr>
+                  <td><?php echo $r['id_log'] ?></td>
                   <td><?php echo $r['id_form'] ?></td>
-                  <td><?php echo $r['provider'] ?></td>
-                  <td><?php echo $r['cluster'] ?></td>
-                  <td><?php echo $r['site'] ?></td>
-                  <td><?php echo $r['incm'] ?></td>
-                  <td><?php echo $r['date'] ?></td>
+                  <td><?php echo $r['time'] ?></td>
                   <td>
-                      <a href="editdatamasuk.php?id=<?php echo $r['id_form'] ?>" class="btn btn-warning" style="background-color:#37517e; border-color: #37517e; color:white;">Edit</a> &nbsp;
-                      <a onclick="return confirm('Are you sure?');" href="deldatamasuk.php?id=<?php echo $r['id_form'] ?>" class="btn btn-danger">Delete</a>
-                  </td>
+                  <a href="viewdatalog.php?id=<?php echo $r['id_log'] ?>" class="btn btn-primary" style="background-color:white; border-color: #37517e; color:#37517e;">View</a> &nbsp;
+                    </td>
               </tr>
         <?php }?>
     </table>
@@ -150,7 +142,7 @@
             <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="index.php">Form</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>            
+              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>              
             </ul>
           </div>
         </div>

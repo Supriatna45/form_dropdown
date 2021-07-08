@@ -31,6 +31,16 @@
                return false;
            }
         }
+        public function getLog(){
+            try{
+            $sql = "SELECT * FROM logform";
+            $result = $this->db->query($sql);
+            return $result;
+            }catch(PDOException $e){
+               echo $e->getMessage();
+               return false;
+           }
+        }
         public function editForm($id, $incm, $tgl, $provider, $cluster, $site){
             try{ 
                 $sql = "UPDATE form SET incm=:incm, date=:tgl, provider=:provider, cluster=:cluster, site=:site WHERE id_form = :id"; 
@@ -64,6 +74,19 @@
         public function getFormDetails($id){
             try{
             $sql = "select * from form where id_form = :id";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindparam(':id', $id);
+            $stmt->execute();
+            $result = $stmt->fetch();
+            return $result;
+            }catch(PDOException $e){
+               echo $e->getMessage();
+               return false;
+           }
+        }
+        public function getLogDetails($id){
+            try{
+            $sql = "select * from logform where id_log = :id";
             $stmt = $this->db->prepare($sql);
             $stmt->bindparam(':id', $id);
             $stmt->execute();

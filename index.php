@@ -7,24 +7,19 @@ $connection = new Connection;
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Form Dropdown</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Reference -->
-  
-
   <!-- Favicons -->
   <!-- <link href="assets/img/poltek.png" rel="icon">
   <link href="assets/img/poltek.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -49,6 +44,7 @@ $connection = new Connection;
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  
 </head>
 
 <body>
@@ -65,6 +61,7 @@ $connection = new Connection;
         <ul>
           <li><a class="nav-link scrollto" href="#about">Form</a></li>
           <li><a class="getstarted scrollto" href="datamasuk.php">Tabel</a></li>
+          <!-- <li><a class="nav-link scrollto" href="datalog.php">Log</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -81,12 +78,11 @@ $connection = new Connection;
           <h1>Form Dropdown</h1>
           <h2>Dimohon untuk mengisi data form dengan baik dan benar.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#services" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <img src="assets/img/index.png" class="img-fluid animated" alt="" style="width:505px;height:470px;">
         </div>
       </div>
     </div>
@@ -155,7 +151,6 @@ $connection = new Connection;
             </div>
             <br>
             <br>
-            <br>
             <div class = "container ">
             <button style="background-color:#37517e; border-color: #37517e;" type="submit" name="submit" class="btn btn-primary btn-md">Submit</button>
             </div>
@@ -188,33 +183,10 @@ $connection = new Connection;
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#skills">Partisipan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#faq">Pertanyaan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Form</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="datamasuk.ph">Data</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="datalog.php">Log</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Daftar</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Course</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tukar Pelajar</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Seminar</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Kunjungi media sosial Polinema :</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
           </div>
 
         </div>
@@ -223,14 +195,13 @@ $connection = new Connection;
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>2021</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
