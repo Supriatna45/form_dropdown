@@ -31,7 +31,7 @@ $connection = new Connection;
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/stylef.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.1.0
@@ -80,9 +80,6 @@ $connection = new Connection;
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/index.png" class="img-fluid animated" alt="" >
         </div>
       </div>
     </div>
